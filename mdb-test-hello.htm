@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MDB-Trang Chủ</title>
+
+
+    <!-- Cài đặt CSS: Bootstrap Icon 1.10 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css" rel="stylesheet" />
+</head>
+
+<!--Head là của MDB còn body là của BS4, không thực sự ăn nhập nhau !!!-->
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="/trang-chu.htm">
+                <!-- <img style="height: 40px; border-radius: 50%; "src="" alt=""> -->
+
+                <span style="font-family:'Palace Script MT', sans-serif; font-size: 40px;">
+                    <i class="fa fa-apple"></i> Luxury Car
+                </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05"
+                aria-controls="navbarsExample05" aria-expanded="false" aria-label="Chuyển đổi điều hướng thành">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExample05">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="bi-list"></i> Danh Mục
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="san-pham.htm">
+                            <i class="bi bi-tag"></i> Sản Phẩm
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="bi-cart-check"></i> Giỏ Hàng
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="bi-currency-dollar"></i> Thanh Toán
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown05"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-user"></i> Tài Khoản
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown05">
+                            <a class="dropdown-item" href="#">
+                                <font style="vertical-align: inherit;">
+                                    <i class="fa fa-user-plus"></i> Đăng Ký
+                                </font>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <font style="vertical-align: inherit;">
+                                    <i class="fa fa-sign-in"></i> Đăng Nhập
+                                </font>
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <font style="vertical-align: inherit;">
+                                    <i class="fa fa-sign-out"></i> Đăng Thoát
+                                </font>
+                            </a>
+                            <hr style="margin: 0;">
+                            <a class="dropdown-item" href="#">
+                                <font style="vertical-align: inherit;">
+                                    <i class="fa fa-pencil"></i> Sửa
+                                </font>
+                            </a>
+                        </div>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link disabled" href="#">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Vô hiệu hóa</font>
+                            </font>
+                        </a>
+                    </li> -->
+
+                </ul>
+                <!-- <form class="form-inline my-2 my-md-0">
+                    <input class="form-control" type="text" placeholder="Tìm kiếm" fdprocessedid="mysh4n">
+                </form> -->
+                <div class="dropdown">
+                    <a class=" dropdown-toggle" href="#" id="dropdown05" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <font style="vertical-align: inherit;"> <i class="bi-globe"></i>Trang Khác</font>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown05">
+                        <a class="dropdown-item" href="#">
+                            Giới Thiệu
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            Liên Hệ
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            Tin Tức
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div id="demo" class="carousel slide" data-ride="carousel">
+
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://www.w3schools.com/bootstrap4/la.jpg" alt="Los Angeles">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://www.w3schools.com/bootstrap4/chicago.jpg" alt="Chicago">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://www.w3schools.com/bootstrap4/ny.jpg" alt="New York">
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+
+        </div>
+        <div style="margin-top: 50px; background-color: red; text-align: center;">
+            <h1>
+                Sale đồng giá từ 1,499,999đ nhân dịp Noel 🎄 🎄
+            </h1>
+        </div>
+        <div class="album py-5 bg-light">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top"
+                                data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                alt="Hình thu nhỏ [100%x225]" style="height: 225px; width: 100%; display: block;"
+                                src="https://scontent.fhan2-4.fna.fbcdn.net/v/t39.30808-6/315873475_1414855419280328_5485844308917458787_n.jpg?stp=cp6_dst-jpg&_nc_cat=110&ccb=1-7&_nc_sid=174925&_nc_ohc=IINd8g3kQkIAX9AlOiu&_nc_ht=scontent.fhan2-4.fna&oh=00_AfAEO8aJ7wavJ1CbR4mGT1Mk9NwbA87Dhw134e1VFvow4A&oe=63AB4C64"
+                                data-holder-rendered="true">
+
+                            <div class="card-body">
+                                <h2>
+                                    1,499,999<u>đ</u>
+                                </h2>
+                                <p class="card-text">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">Tên sản phẩm : Nguyễn Văn Mạnh </font>
+                                        <br>
+                                        <font style="vertical-align: inherit;">Công dụng : Chăm học, có siêu xa way chở
+                                            ny đi noel</font>
+                                    </font>
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;"><i
+                                                        class="bi bi-cart-fill"></i>Thêm vào giỏ</font>
+                                            </font>
+                                        </button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary"><i
+                                                class="bi bi-search"></i> Chi tiết</button>
+                                    </div>
+                                    <small class="text-muted">
+                                        <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">9 phút</font>
+                                        </font>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top"
+                                data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                alt="Hình thu nhỏ [100%x225]" style="height: 225px; width: 100%; display: block;"
+                                src="https://scontent.fhan14-1.fna.fbcdn.net/v/t1.15752-9/319992391_5477797929014118_5399280100389122849_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=ae9488&_nc_ohc=7H3AWhNJZ80AX97zp04&_nc_ht=scontent.fhan14-1.fna&oh=03_AdSi3BPJhfGGCb7bmOOMUH2JeCWEpfE0nEx_qJScm9moZg&oe=63CD0DDE"
+                                data-holder-rendered="true">
+
+                            <div class="card-body">
+                                <h2>
+                                    1,500,000<u>đ</u>
+                                </h2>
+                                <p class="card-text">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">Tên sản phẩm : Nguyễn Quốc Khánh</font>
+                                        <br>
+                                        <font style="vertical-align: inherit;">Đặc điểm : Học , học nữa , học lấy tiền
+                                            nuôi vk , "500k anh tiêu trong 1 ngày "</font>
+                                    </font>
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;"><i
+                                                        class="bi bi-cart-fill"></i>Thêm vào giỏ</font>
+                                            </font>
+                                        </button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary"><i
+                                                class="bi bi-search"></i> Chi tiết</button>
+                                    </div>
+                                    <small class="text-muted">
+                                        <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">9 phút</font>
+                                        </font>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top"
+                                data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                alt="Hình thu nhỏ [100%x225]" style="height: 225px; width: 100%; display: block;"
+                                src="https://scontent.fhan14-1.fna.fbcdn.net/v/t39.30808-6/241550514_899207260991083_5594690269036975161_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=IeZlI5CzgmwAX8gStLo&tn=F0SisVliartT_IqG&_nc_ht=scontent.fhan14-1.fna&oh=00_AfAFtBSxXnPfTq-VEibVcRlpys8TukHYnJSSr-1nb2NihQ&oe=63AA8D35"
+                                data-holder-rendered="true">
+
+                            <div class="card-body">
+                                <h2>
+                                    1,500,000<u>đ</u>
+                                </h2>
+                                <p class="card-text">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">Tên sản phẩm : Nguyễn Hoàng An </font>
+                                        <br>
+                                        <font style="vertical-align: inherit;">Đặc điểm : Hot boy cuar lớp</font>
+                                    </font>
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;"><i
+                                                        class="bi bi-cart-fill"></i>Thêm vào giỏ</font>
+                                            </font>
+                                        </button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary"><i
+                                                class="bi bi-search"></i> Chi tiết</button>
+                                    </div>
+                                    <small class="text-muted">
+                                        <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">9 phút</font>
+                                        </font>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top"
+                                data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                alt="Hình thu nhỏ [100%x225]" style="height: 225px; width: 100%; display: block;"
+                                src="https://scontent.xx.fbcdn.net/v/t1.15752-9/320394683_539637194704984_8004985718529683425_n.jpg?stp=dst-jpg_p160x160&_nc_cat=109&ccb=1-7&_nc_sid=aee45a&_nc_ohc=f8hPmjOmvuUAX_-NVL_&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdQ-GqRdquBdvnLOWyvypZ2tS4axQSiZZjmb0U0t9F8JUQ&oe=63CD137B"
+                                data-holder-rendered="true">
+
+                            <div class="card-body">
+                                <h2>
+                                    1,500,000<u>đ</u>
+                                </h2>
+                                <p class="card-text">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">Tên sản phẩm : Phùng Kim Quang </font>
+                                        <br>
+                                        <font style="vertical-align: inherit;">Đặc điểm : "Cho tôi mượn 50k tất tay Bồ
+                                            Đào Nhà " </font>
+                                    </font>
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;"><i
+                                                        class="bi bi-cart-fill"></i>Thêm vào giỏ</font>
+                                            </font>
+                                        </button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary"><i
+                                                class="bi bi-search"></i> Chi tiết</button>
+                                    </div>
+                                    <small class="text-muted">
+                                        <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">9 phút</font>
+                                        </font>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top"
+                                data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                alt="Hình thu nhỏ [100%x225]" style="height: 225px; width: 100%; display: block;"
+                                src="https://scontent.fhan14-3.fna.fbcdn.net/v/t1.6435-9/92532619_235734424484090_658094676007452672_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=174925&_nc_ohc=mWhqfPtXksAAX_Ox7AF&tn=F0SisVliartT_IqG&_nc_ht=scontent.fhan14-3.fna&oh=00_AfDRyNLF25ST6KGLOqUZ1_4V5tC87z3LSYz8_K15LQky1w&oe=63CD23BE"
+                                data-holder-rendered="true">
+
+                            <div class="card-body">
+                                <h2>
+                                    1,500,000<u>đ</u>
+                                </h2>
+                                <p class="card-text">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">Tên sản phẩm : Trần Minh Hiếu </font><br>
+                                        <font style="vertical-align: inherit;">Đặc điểm : Đẹp trai , chăm học , hiền
+                                            lành ,dễ gần . Hiện đang là chủ chuỗi cung ứng gạo toàn HÀ NỘI</font>
+                                    </font>
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;"><i
+                                                        class="bi bi-cart-fill"></i>Thêm vào giỏ</font>
+                                            </font>
+                                        </button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary"><i
+                                                class="bi bi-search"></i> Chi tiết</button>
+                                    </div>
+                                    <small class="text-muted">
+                                        <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">9 phút</font>
+                                        </font>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top"
+                                data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                alt="Hình thu nhỏ [100%x225]"
+                                src="https://scontent.fhan14-3.fna.fbcdn.net/v/t39.30808-6/319919023_1223206914933475_2524708489605709012_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=yAogDZcsf0QAX-rnQbS&_nc_ht=scontent.fhan14-3.fna&oh=00_AfB34-fs7qdV-TF_YP0rcZKzdshbIh-m-C6USXVnVff2Kg&oe=63AAAF39"
+                                data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                            <div class="card-body">
+
+                                <p class="card-text">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">Tên sản phẩm : Hoàng Ngọc Quân </font>
+                                        <br>
+                                        <font style="vertical-align: inherit;">Công dụng : Cao to đoepj trai , ga lăng
+                                            ,siêu cầu thủ</font>
+                                    </font>
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                                            <i class="bi bi-cart-fill"></i>Mua
+
+                                        </button>
+
+                                    </div>
+                                    <h2>
+                                        1,500,000<u>đ</u>
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="container" style="text-align: center;">
+        <hr>
+        <span>&copy; 2022.Pham The Tung</span>
+
+    </footer>
+
+    <!-- Cài đặt bs4-js -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
